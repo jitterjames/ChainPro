@@ -43,6 +43,11 @@ jobs:
         distribution: 'temurin'
         cache: gradle
     
+    - name: Install WiX Toolset
+      run: |
+        choco install wixtoolset -y
+        refreshenv
+    
     - name: Build Windows Installer with Gradle
       run: ./gradlew jpackage
     

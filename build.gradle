@@ -73,14 +73,12 @@ jlink {
             ]
         */
 
-        /*
-            installerType = "msi"
-            imageOptions += ['--icon', 'src/main/resources/com.papaworx.cpro/chain.ico']
-            installerOptions += [
-                '--win-menu',
-                '--win-shortcut'
-            ]
-        */
+        installerType = "msi"
+        imageOptions += ['--icon', 'src/main/resources/com.papaworx.cpro/chain.ico']
+        installerOptions += [
+            '--win-menu',
+            '--win-shortcut'
+        ]
 
         /*
             installerType = "dmg"
